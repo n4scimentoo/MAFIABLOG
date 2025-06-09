@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;/* Define o modelo de caixa para todos os elementos */
+    margin: 0;/* Remove a margem padrão de todos os elementos */
+    padding: 0;/* Remove o preenchimento padrão de todos os elementos */
+}
+body {
+    overflow: hidden; /*Impede a rolagem da página */
+    background-color: #000000;/* Define a cor de fundo da página como preto */
+}
+div {
+    display: flex;/* Define o modelo de exibição como flexível para todos os elementos div */
+    flex-direction: column;/* Define a direção do layout flexível como coluna */
+    align-items: center;/* Alinha os itens ao centro do eixo transversal */
+    /*justify-content: center;*/
+    height: 20vh;/* Define a altura de todos os elementos div como 20% da altura da janela de visualização */
+    /*visibility: hidden;*/
+}
+
+/*#barralateral {
+    visibility: hidden; Torna o elemento invisível 
+}*/
+
+h1 {
+    font-family: "Instrument serif", serif;/* Define a fonte do título como "Instrument serif" */
+    font-weight: 400;/* Define o peso da fonte como 400 (normal) */
+    font-style: normal;/* Define o estilo da fonte como normal */
+    font-size: 2em;/* Define o tamanho da fonte como 2 vezes o tamanho padrão */
+    text-align: center;/* Alinha o texto do título ao centro */
+    align-content: center;/* Alinha o conteúdo ao centro do eixo transversal */
+    width: max-content;/* Define a largura do título como o tamanho máximo do conteúdo */
+    padding: 20px;/* Adiciona um preenchimento de 20 pixels ao redor do título */
+    height: 20vh;/* Define a altura do título como 20% da altura da janela de visualização */
+    color: #999E11;/* Define a cor do texto do título como um tom de amarelo */
+}
+#large-grid {
+    display: flex;/* Define o modelo de exibição como flexível para o grid grande */ 
+    flex-direction: row; /* Define a direção do layout flexível como linha */
+    gap: 2vw;/* Define o espaço entre os itens do grid como 2% da largura da janela de visualização */
+    justify-content: center; /* Centraliza os itens do grid ao longo do eixo principal */
+    align-items: center; /* Alinha os itens do grid ao centro do eixo transversal */
+    width: 100%;/* Define a largura do grid como 100% da largura da janela de visualização */
+    height: 100%;/* Define a altura do grid como 100% da altura da janela de visualização */
+    position: relative;/* Define a posição do grid como relativa, permitindo o posicionamento absoluto de elementos internos */
+    top: 0;/* Define a posição superior do grid como 0, alinhando-o ao topo da janela de visualização */
+    left: 0;/* Define a posição esquerda do grid como 0, alinhando-o à esquerda da janela de visualização */
+    background: transparent;/* Define o fundo do grid como transparente */
+    padding: 9px;/* Adiciona um preenchimento de 9 pixels ao redor do grid */
+}
+#large-grid #title {
+    font-family: 'Instrument serif', serif;/* Define a fonte do título do grid grande como "Instrument serif" */
+    font-weight: 400;/* Define o peso da fonte como 400 (normal) */
+    font-style: normal;/* Define o estilo da fonte como normal */
+    color: #999E11;/* Define a cor do texto do título como um tom de amarelo */
+    font-size: 20;/* Define o tamanho da fonte do título como 20 pixels */
+    text-align: left;/* Alinha o texto do título ao lado esquerdo */
+    align-self: flex-start;/* Alinha o título ao início do eixo transversal */
+    width: 100%;/* Define a largura do título como 100% da largura do grid */
+    margin-left: 0;/* Remove a margem esquerda do título */
+}
+#large-grid p {
+    font-family: 'Inter', sans-serif;/* Define a fonte do parágrafo como "Inter" */
+    font-weight: 100;/* Define o peso da fonte do parágrafo como 100 (leve) */
+    color: #ffffff39;/* Define a cor do texto do parágrafo como um tom de cinza claro */
+    align-self: flex-start;/* Alinha o parágrafo ao início do eixo transversal */
+}
+
+#large-grid img {
+    box-shadow: #999E1157 0px 0px 10px;/* Adiciona uma sombra ao redor das imagens com um tom de amarelo */
+    border-radius: 4px;/* Define o raio da borda das imagens como 4 pixels, arredondando os cantos */
+    width: 200px;/* Define a largura das imagens como 200 pixels */
+    height: auto;/* Define a altura das imagens como automática, mantendo a proporção original */
+    position: relative;/* Define a posição das imagens como relativa, permitindo o posicionamento absoluto de elementos internos */
+    transition: transform 0.3s ease, box-shadow 0.3s;/* Adiciona uma transição suave para transformações e sombras */
+    cursor: default;/* Define o cursor como padrão ao passar sobre as imagens */
+}
+#large-grid img:hover {
+    transform: scale(1.1); /* Aproxima a imagem */
+    box-shadow: #999E11aa 0px 4px 24px; /* Realça a sombra */
+}
+
+#small-grid {
+    display: flex; /* Define o modelo de exibição como flexível para o grid pequeno */
+    flex-direction: row; /* Define a direção do layout flexível como linha */
+    gap: 2vw;/* Define o espaço entre os itens do grid como 2% da largura da janela de visualização */
+    justify-content: center; /* Centraliza os itens do grid ao longo do eixo principal */
+    align-items: center; /* Alinha os itens do grid ao centro do eixo transversal */
+    width: 100%;/* Define a largura do grid como 100% da largura da janela de visualização */
+    height: 100%;/* Define a altura do grid como 100% da altura da janela de visualização */
+    position: relative;/* Define a posição do grid como relativa, permitindo o posicionamento absoluto de elementos internos */
+    top: 0;/* Define a posição superior do grid como 0, alinhando-o ao topo da janela de visualização */
+    left: 0;/* Define a posição esquerda do grid como 0, alinhando-o à esquerda da janela de visualização */
+    background: transparent;/* Define o fundo do grid como transparente */
+    padding: 200px;/* Adiciona um preenchimento de 200 pixels ao redor do grid */  
+    scale: 0.7; /* Reduz o tamanho do grid pequeno para 70% do tamanho original */
+
+}
+#small-grid #title {
+    font-family: 'Jacquard 12', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #999E11;
+    font-size: 26px;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-left: 0;
+}
+#small-grid p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    color: #ffffff39;
+    align-self: flex-start;
+}
+
+#small-grid img {
+    box-shadow: #999E1157 0px 0px 10px;
+    border-radius: 4px;
+    width: 200px;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    cursor: default;
+}
+#small-grid img:hover {
+    transform: scale(1.1); /* Aproxima a imagem */
+    box-shadow: #999E11aa 0px 4px 24px; /* Realça a sombra */
+}
+#sidebar {
+    position:fixed;
+    top:0;
+    left:-220px;
+    width:220px;
+    height:100vh;
+    background:#000000;
+    transition:left 0.3s;
+    z-index:500;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:40px;
+}
