@@ -91,7 +91,6 @@ h1 {
     background: transparent;/* Define o fundo do grid como transparente */
     padding: 200px;/* Adiciona um preenchimento de 200 pixels ao redor do grid */  
     scale: 0.7; /* Reduz o tamanho do grid pequeno para 70% do tamanho original */
-    cursor: text;
 }
 #small-grid #title {
     font-family: 'Jacquard 12', serif;
