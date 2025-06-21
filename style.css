@@ -70,7 +70,7 @@ h1 {
     height: auto;/* Define a altura das imagens como automática, mantendo a proporção original */
     position: relative;/* Define a posição das imagens como relativa, permitindo o posicionamento absoluto de elementos internos */
     transition: transform 0.3s ease, box-shadow 0.3s;/* Adiciona uma transição suave para transformações e sombras */
-    cursor: default;/* Define o cursor como padrão ao passar sobre as imagens */
+    cursor: pointer;/* Define o cursor como padrão ao passar sobre as imagens */
 }
 #large-grid img:hover {
     transform: scale(1.1); /* Aproxima a imagem */
@@ -91,7 +91,7 @@ h1 {
     background: transparent;/* Define o fundo do grid como transparente */
     padding: 200px;/* Adiciona um preenchimento de 200 pixels ao redor do grid */  
     scale: 0.7; /* Reduz o tamanho do grid pequeno para 70% do tamanho original */
-
+    cursor: pointer;
 }
 #small-grid #title {
     font-family: 'Jacquard 12', serif;
@@ -118,7 +118,7 @@ h1 {
     height: auto;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s;
-    cursor: default;
+    cursor: pointer;
 }
 #small-grid img:hover {
     transform: scale(1.1); /* Aproxima a imagem */
@@ -138,27 +138,21 @@ h1 {
     align-items:center;
     padding-top:40px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 655px) {
     #large-grid, #small-grid {
-        flex-direction: column;
+        flex-direction: row;
+        display: flex;
         gap: 4vw;
-        padding: 20px;/* */
-        scale: 1; /* Remove o scale para melhor visualização em telas pequenas */
+        padding: 20px;
+        scale: 1;
     }
-
-    #large-grid img,
-    #small-grid img {
-        width: 90vw;
+    div#preloader{ 
+        padding: 18px;
+    }
+    #large-grid img, #small-grid img {
+        width: 100vw;
         max-width: 100%;
     }
-
-    #sidebar {
-        width: 100vw;
-        left: -100vw;
-        padding-top: 20px;
-    }
-
     h1 {
         font-size: 1.2em;
         padding: 10px;
@@ -169,4 +163,4 @@ h1 {
     #small-grid #title {
         font-size: 18px;
     }
-}
+} 
